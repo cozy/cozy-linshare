@@ -4,11 +4,19 @@ import { useExternalBridge } from 'cozy-external-bridge/container'
 import flag from 'cozy-flags'
 
 const App = () => {
-  const embeddedLinShareUrl = flag('linshare.embedded-app-url')
+  const embeddedAppRootUrl = flag('linshare.embedded-app-url')
 
-  useExternalBridge(embeddedLinShareUrl)
+  const { isReady, urlToLoad } = useExternalBridge(embeddedAppRootUrl)
 
-  return <iframe id="embeddedApp" src={embeddedLinShareUrl}></iframe>
+  // We can not return null if bridge is not ready because to setup
+  // the bridge we need iframe HTML element
+  return (
+    <iframe
+      id="embeddedApp"
+      src={isReady ? urlToLoad : null}
+      allow="clipboard-read; clipboard-write"
+    ></iframe>
+  )
 }
 
 export default App
