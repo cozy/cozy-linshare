@@ -4014,10 +4014,10 @@ cozy-device-helper@^3.8.0:
   dependencies:
     lodash "^4.17.19"
 
-cozy-external-bridge@^0.16.0:
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/cozy-external-bridge/-/cozy-external-bridge-0.16.2.tgz#16642e4760a663faa0e693dafab3e0285420d7d7"
-  integrity sha512-kAahCswdZ/hhN+XVyVhpkxcM8aFowBwHEgd1CbaPSRLAuIXOwJpDgkvLg2MMT7UG2UxElZ9te5hW5PfAj/CO7A==
+cozy-external-bridge@^0.16.4:
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/cozy-external-bridge/-/cozy-external-bridge-0.16.4.tgz#849d86cc822606b4c6e07530ccc13443b0716d88"
+  integrity sha512-OlrvK0iNv9j96L9lpQBp2MA5FdnaEOmxj1njAPyWbGpSOnf1IlsH42NhoH7z9OXgtDQgn4tUuDmIpPtPqZEL2g==
   dependencies:
     comlink "4.4.1"
 
@@ -7685,9 +7685,9 @@ ms@2.1.3, ms@^2.1.1, ms@^2.1.3:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
-"mui-bottom-sheet@git+https://github.com/cozy/mui-bottom-sheet.git#v1.0.9":
+"mui-bottom-sheet@https://github.com/cozy/mui-bottom-sheet.git#v1.0.9":
   version "1.0.8"
-  resolved "git+https://github.com/cozy/mui-bottom-sheet.git#3dc4c2a245ab39079bc2f73546bccf80847be14c"
+  resolved "https://github.com/cozy/mui-bottom-sheet.git#3dc4c2a245ab39079bc2f73546bccf80847be14c"
   dependencies:
     "@juggle/resize-observer" "^3.1.3"
     jest-environment-jsdom-sixteen "^1.0.3"
